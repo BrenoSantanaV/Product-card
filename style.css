@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root   {
+    --bg-color: #D9CDF7;
+
+    --text-color: #271A45;
+}
+    
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+
+body * {
+    color: var(--text-color);
+    
+    font-family: 'Lato', sans-serif;
+
+}
+
+#btn-close,
+#animated{
+    display: none ;
+}
+
+#app {
+    display: flex ;
+    align-items: center ;
+    gap: 63px;
+}
+#productimage{
+    position: relative;
+}
+#product-image button{
+    position: absolute;
+    right: 0;
+
+}
+
+#product-image > img{
+    width: 449px;
+    height: 222px;
+    object-fit: cover;
+}
+
+
+h1{
+    font-family: 'Crimson Pro', serif;
+}
+
+
+
+
+
+
