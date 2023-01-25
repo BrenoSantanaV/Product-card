@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="animated" >
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
@@ -12,27 +12,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product card</title>
     <link rel="stylesheet" href="style.css">
+    />
 </head>
 <body>
-    <div id="app"></div>
-        <div id="product-image"></div>
-            <button id="btn-360">
-                <img src="./assets/360.svg" alt="clique no botao para girar o sofa">
+    <div id="app">
+       
+    <div id="product-image">
+        <button id="btn-360" onclick="toggle()" >
+                <img src="./assets/360.svg" 
+                alt="clique no botao para girar o sofa">
+            
             </button>
             
-            <button id="btn-close">
-                <img src="./assets/close.svg" alt="parar de girar o sofa">
+        <button id="btn-close" onclick="toggle()" >
+                <img src="./assets/close.svg" 
+                alt="parar de girar o sofa">
+            
             </button>
             
                 <img id="static" src="./assets/sofa.jpg" alt="sofa">
                 <img id="animated" src="./assets/sofa.gif" alt="sofa 360">
-        
-        
-    <div id="product-details"></div>
+            
+            </div>
+            
+
+    <div id="product-details">
             <h4>CODIGO: 42404</h4>
             <h1>Sofá Margot II - Rosé</h1>
             <p>R$ 4.000 </p>
             <button>ADICIONAR À CESTA</button>
-    
+        
+        </div>
+    </div> 
+
+
+
+    <script>
+
+            function toggle()  {
+
+                document.documentElement.classList.toggle()
+
+
+
+            }
+
+
+    </script>
 </body>
 </html>
